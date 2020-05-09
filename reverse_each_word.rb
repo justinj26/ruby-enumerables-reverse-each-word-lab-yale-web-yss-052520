@@ -4,7 +4,7 @@ def reverse_each_word(string)
  string_array.each do |element|
    new_string_array << element.reverse
  end
- new_string_array
+ new_string_array.join(' ')
 end
 
 def reverse_each_word(string)
@@ -12,5 +12,6 @@ def reverse_each_word(string)
   string_array.collect do |element|
     element.reverse 
   end
+  string_array.join(' ')
 end
 
